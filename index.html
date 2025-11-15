@@ -1,35 +1,40 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Feira de Profissões - Centro Educa Mais Ribeiro do Amaral</title>
+    <title>Feira de Profissões - Centro Educa Mais Ribeiro do Amaral</title>
 
-<meta name="description" content="Feira de Profissões do Centro Educa Mais Ribeiro do Amaral — descubra carreiras, participe de oficinas, palestras e conheça oportunidades de estudo e trabalho.">
-<meta name="keywords" content="Feira de Profissões, Centro Educa Mais Ribeiro do Amaral, carreiras, profissões, educação, oficinas, palestras, oportunidades, ensino médio, orientação profissional">
-<meta name="author" content="Centro Educa Mais Ribeiro do Amaral">
+    <meta name="description"
+        content="Feira de Profissões do Centro Educa Mais Ribeiro do Amaral — descubra carreiras, participe de oficinas, palestras e conheça oportunidades de estudo e trabalho.">
+    <meta name="keywords"
+        content="Feira de Profissões, Centro Educa Mais Ribeiro do Amaral, carreiras, profissões, educação, oficinas, palestras, oportunidades, ensino médio, orientação profissional">
+    <meta name="author" content="Centro Educa Mais Ribeiro do Amaral">
 
-<meta name="geo.region" content="BR-MA">
-<meta name="geo.placename" content="São Luís">
-<meta name="geo.position" content="-2.53874;-44.2825">
-<meta name="ICBM" content="-2.53874, -44.2825">
+    <meta name="geo.region" content="BR-MA">
+    <meta name="geo.placename" content="São Luís">
+    <meta name="geo.position" content="-2.53874;-44.2825">
+    <meta name="ICBM" content="-2.53874, -44.2825">
 
-<!-- Open Graph -->
-<meta property="og:title" content="Feira de Profissões - Centro Educa Mais Ribeiro do Amaral">
-<meta property="og:description" content="Conheça profissões, participe de palestras e explore novas oportunidades de futuro na Feira de Profissões do Centro Educa Mais Ribeiro do Amaral.">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://ulasoftware-feiradeprofissoes.netlify.app/">
-<meta property="og:image" content="https://ulasoftware-feiradeprofissoes.netlify.app/assets/images/logo-feira-de-profissoes.PNG">
-<meta property="og:locale" content="pt_BR">
+    <!-- Open Graph -->
+    <meta property="og:title" content="Feira de Profissões - Centro Educa Mais Ribeiro do Amaral">
+    <meta property="og:description"
+        content="Conheça profissões, participe de palestras e explore novas oportunidades de futuro na Feira de Profissões do Centro Educa Mais Ribeiro do Amaral.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ulasoftware-feiradeprofissoes.netlify.app/">
+    <meta property="og:image"
+        content="https://ulasoftware-feiradeprofissoes.netlify.app/assets/images/cem-ribeiro-do-amaral.jpeg">
+    <meta property="og:locale" content="pt_BR">
 
-<!-- Twitter Card -->
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Feira de Profissões - Centro Educa Mais Ribeiro do Amaral">
-<meta name="twitter:description" content="Evento educacional com oficinas, palestras e orientação de carreira.">
-<meta name="twitter:image" content="https://ulasoftware-feiradeprofissoes.netlify.app/assets/images/logo-feira-de-profissoes.PNG">
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Feira de Profissões - Centro Educa Mais Ribeiro do Amaral">
+    <meta name="twitter:description" content="Evento educacional com oficinas, palestras e orientação de carreira.">
+    <meta name="twitter:image" content="assets/images/detalhe-cronograma.jpg">
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
 
     <style>
@@ -44,47 +49,47 @@
             --warning: #ffc107;
             --danger: #dc3545;
         }
-        
+
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
             font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
         }
-        
+
         body {
             background-color: #f5f5f5;
             color: var(--dark);
             line-height: 1.6;
             transition: all 0.3s ease;
         }
-        
+
         .container {
             max-width: 1200px;
             margin: 0 auto;
             padding: 0 15px;
         }
-        
+
         header {
             background: linear-gradient(135deg, var(--primary), #0d47a1);
             color: white;
             padding: 20px 0;
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
         }
-        
+
         .header-content {
             display: flex;
             flex-direction: column;
             align-items: center;
             text-align: center;
         }
-        
+
         .logo-container {
             display: flex;
             align-items: center;
             margin-bottom: 15px;
         }
-        
+
         .logo {
             width: 80px;
             height: 80px;
@@ -96,46 +101,99 @@
             margin-right: 15px;
             overflow: hidden;
         }
-        
+
         .logo img {
             width: 100%;
             height: 100%;
             object-fit: cover;
         }
-        
+
         .event-title h1 {
             font-size: 1.8rem;
             margin-bottom: 5px;
             color: white;
         }
-        
+
         .event-title p {
             font-size: 1rem;
             opacity: 0.9;
             color: white;
         }
-        
-        .countdown-container {
+
+        .div-countdown-container {
             background-color: white;
             border-radius: 12px;
             padding: 20px;
             margin: 20px 0;
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
             text-align: center;
+            display: flex;
+            flex-shrink: initial;
+            justify-content: space-evenly;
+            align-items: center;
+            align-content: space-between;
+            flex-wrap: wrap;
+            flex-direction: row;
         }
-        
+
+        .banner-countdown-wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            align-items: stretch;
+            margin-top: 20px;
+        }
+
+        /* QR CODE FULLSCREEN */
+        .fullscreen-qrcode {
+            position: absolute;
+            top: 25px;
+            left: 25px;
+            background: rgba(255, 255, 255, 0.15);
+            padding: 15px;
+            border-radius: 12px;
+            backdrop-filter: blur(8px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+            text-align: center;
+        }
+
+        .fullscreen-qrcode img {
+            width: 160px;
+            height: 160px;
+            object-fit: cover;
+            border-radius: 10px;
+            border: 3px solid #fff;
+        }
+
+        .fullscreen-qrcode p {
+            color: white;
+            margin-top: 10px;
+            font-weight: bold;
+            font-size: 1rem;
+        }
+
+
+
+        .countdown-container {
+            background-color: white;
+            padding: 20px;
+            margin: 20px 0;
+            text-align: center;
+            border-color: #dc3545;
+        }
+
         .countdown-title {
             color: var(--dark);
             margin-bottom: 15px;
             font-size: 1.2rem;
         }
-        
+
         .countdown {
             display: flex;
             justify-content: center;
             gap: 15px;
         }
-        
+
         .countdown-item {
             background: linear-gradient(135deg, var(--primary), #0d47a1);
             color: white;
@@ -144,18 +202,18 @@
             min-width: 70px;
             text-align: center;
         }
-        
+
         .countdown-number {
             font-size: 1.8rem;
             font-weight: bold;
             line-height: 1;
         }
-        
+
         .countdown-label {
             font-size: 0.8rem;
             margin-top: 5px;
         }
-        
+
         .event-alert {
             background: linear-gradient(135deg, var(--accent), #ff9800);
             color: white;
@@ -168,7 +226,7 @@
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
             display: none;
         }
-        
+
         .schedule-container {
             background-color: white;
             border-radius: 12px;
@@ -176,7 +234,7 @@
             margin: 20px 0;
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
         }
-        
+
         .schedule-title {
             color: var(--dark);
             margin-bottom: 20px;
@@ -185,39 +243,39 @@
             border-bottom: 2px solid var(--primary);
             padding-bottom: 10px;
         }
-        
+
         .day-tabs {
             display: flex;
             margin-bottom: 20px;
             border-bottom: 1px solid #e0e0e0;
         }
-        
+
         .day-tab {
             padding: 10px 20px;
             cursor: pointer;
             border-bottom: 3px solid transparent;
             transition: all 0.3s ease;
         }
-        
+
         .day-tab.active {
             border-bottom: 3px solid var(--primary);
             color: var(--primary);
             font-weight: bold;
         }
-        
+
         .day-tab.disabled {
             opacity: 0.5;
             cursor: not-allowed;
         }
-        
+
         .schedule {
             display: none;
         }
-        
+
         .schedule.active {
             display: block;
         }
-        
+
         .event {
             display: flex;
             margin-bottom: 20px;
@@ -226,12 +284,12 @@
             box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
             transition: transform 0.3s ease;
         }
-        
+
         .event:hover {
             transform: translateY(-3px);
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
         }
-        
+
         .event-time {
             background-color: var(--primary);
             color: white;
@@ -242,48 +300,48 @@
             align-items: center;
             min-width: 100px;
         }
-        
+
         .event-time .time {
             font-size: 1.1rem;
             font-weight: bold;
         }
-        
+
         .event-content {
             flex: 1;
             padding: 15px;
             border-left: 4px solid var(--primary);
         }
-        
+
         .event-title {
             font-size: 1.1rem;
             font-weight: bold;
             margin-bottom: 8px;
             color: var(--dark);
         }
-        
+
         .event-description {
             color: var(--gray);
             margin-bottom: 8px;
             font-size: 0.9rem;
         }
-        
+
         .event-participants {
             font-size: 0.85rem;
             color: var(--gray);
             margin-bottom: 8px;
         }
-        
+
         .event-location {
             display: flex;
             align-items: center;
             font-size: 0.85rem;
             color: var(--primary);
         }
-        
+
         .event-location i {
             margin-right: 5px;
         }
-        
+
         .event-image {
             width: 100px;
             background-color: #f0f0f0;
@@ -296,13 +354,13 @@
             padding: 10px;
             overflow: hidden;
         }
-        
+
         .event-image img {
             width: 100%;
             height: 100%;
             object-fit: cover;
         }
-        
+
         .status-indicator {
             display: inline-block;
             width: 10px;
@@ -310,58 +368,66 @@
             border-radius: 50%;
             margin-right: 8px;
         }
-        
+
         .status-upcoming {
             background-color: var(--warning);
         }
-        
+
         .status-ongoing {
             background-color: var(--success);
             animation: pulse 1.5s infinite;
         }
-        
+
         .status-completed {
             background-color: var(--gray);
         }
-        
+
         .status-inactive {
             background-color: #e0e0e0;
         }
-        
+
         @keyframes pulse {
-            0% { opacity: 1; }
-            50% { opacity: 0.5; }
-            100% { opacity: 1; }
+            0% {
+                opacity: 1;
+            }
+
+            50% {
+                opacity: 0.5;
+            }
+
+            100% {
+                opacity: 1;
+            }
         }
-        
+
         footer {
             background-color: var(--dark);
             color: white;
             padding: 30px 0;
             margin-top: 40px;
         }
-        
+
         .footer-content {
             display: flex;
             flex-direction: column;
             align-items: center;
             text-align: center;
         }
-        
+
         .contact-info {
             margin-bottom: 20px;
         }
-        
+
         .contact-info p {
             margin-bottom: 5px;
         }
-        
+
         .social-links {
             display: flex;
             gap: 15px;
             margin-bottom: 20px;
         }
-        
+
         .social-link {
             width: 40px;
             height: 40px;
@@ -372,11 +438,11 @@
             justify-content: center;
             transition: background-color 0.3s ease;
         }
-        
+
         .social-link:hover {
             background-color: rgba(255, 255, 255, 0.2);
         }
-        
+
         .dev-credit {
             margin-top: 20px;
             padding-top: 20px;
@@ -384,19 +450,19 @@
             width: 100%;
             text-align: center;
         }
-        
+
         .dev-credit a {
             color: var(--accent);
             text-decoration: none;
             font-weight: bold;
             transition: color 0.3s ease;
         }
-        
+
         .dev-credit a:hover {
             color: white;
             text-decoration: underline;
         }
-        
+
         /* Botão de Tela Cheia */
         .fullscreen-btn {
             position: fixed;
@@ -414,19 +480,19 @@
             z-index: 1000;
             transition: all 0.3s ease;
         }
-        
+
         .fullscreen-btn:hover {
             background: #0d47a1;
             transform: scale(1.1);
         }
-        
+
         /* Modo Tela Cheia */
         body.fullscreen-mode {
             overflow: hidden;
             background: linear-gradient(135deg, var(--primary), #0d47a1);
             color: white;
         }
-        
+
         body.fullscreen-mode header,
         body.fullscreen-mode .countdown-container,
         body.fullscreen-mode .event-alert,
@@ -434,7 +500,7 @@
         body.fullscreen-mode footer {
             display: none;
         }
-        
+
         .fullscreen-container {
             display: none;
             height: 100vh;
@@ -450,16 +516,16 @@
             justify-content: center;
             padding: 20px;
         }
-        
+
         body.fullscreen-mode .fullscreen-container {
             display: flex;
         }
-        
+
         .fullscreen-header {
             text-align: center;
             margin-bottom: 30px;
         }
-        
+
         .fullscreen-logo {
             width: 120px;
             height: 120px;
@@ -471,23 +537,23 @@
             margin: 0 auto 15px;
             overflow: hidden;
         }
-        
+
         .fullscreen-logo img {
             width: 100%;
             height: 100%;
             object-fit: cover;
         }
-        
+
         .fullscreen-title {
             font-size: 2.5rem;
             margin-bottom: 10px;
         }
-        
+
         .fullscreen-subtitle {
             font-size: 1.2rem;
             opacity: 0.9;
         }
-        
+
         .carousel-container {
             width: 100%;
             max-width: 900px;
@@ -497,13 +563,13 @@
             border-radius: 15px;
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
         }
-        
+
         .carousel-track {
             display: flex;
             height: 100%;
             transition: transform 0.5s ease;
         }
-        
+
         .carousel-slide {
             min-width: 100%;
             height: 100%;
@@ -515,20 +581,20 @@
             backdrop-filter: blur(10px);
             border-radius: 15px;
         }
-        
+
         .carousel-slide.completed {
             background: rgba(40, 167, 69, 0.2);
         }
-        
+
         .carousel-slide.ongoing {
             background: rgba(251, 188, 4, 0.3);
             border: 3px solid var(--accent);
         }
-        
+
         .carousel-slide.upcoming {
             background: rgba(26, 115, 232, 0.2);
         }
-        
+
         .slide-time {
             font-size: 2.5rem;
             font-weight: bold;
@@ -536,12 +602,12 @@
             display: flex;
             align-items: center;
         }
-        
+
         .slide-time i {
             margin-right: 15px;
             font-size: 2rem;
         }
-        
+
         .slide-title {
             font-size: 2.2rem;
             margin-top: 15px;
@@ -549,31 +615,31 @@
             margin-left: 3rem;
             align-items: center;
         }
-        
+
         .slide-description {
             font-size: 1.3rem;
             margin-bottom: 15px;
             opacity: 0.9;
             margin-top: 3rem;
         }
-        
+
         .slide-location {
             font-size: 1.2rem;
             display: flex;
             align-items: center;
         }
-        
+
         .slide-location i {
             margin-right: 10px;
         }
-        
+
         .carousel-indicators {
             display: flex;
             justify-content: center;
             margin-top: 20px;
             gap: 10px;
         }
-        
+
         .carousel-indicator {
             width: 12px;
             height: 12px;
@@ -582,12 +648,12 @@
             cursor: pointer;
             transition: all 0.3s ease;
         }
-        
+
         .carousel-indicator.active {
             background: white;
             transform: scale(1.2);
         }
-        
+
         .carousel-nav {
             position: absolute;
             top: 50%;
@@ -605,19 +671,19 @@
             justify-content: center;
             transition: all 0.3s ease;
         }
-        
+
         .carousel-nav:hover {
             background: rgba(255, 255, 255, 0.3);
         }
-        
+
         .carousel-prev {
             left: 20px;
         }
-        
+
         .carousel-next {
             right: 20px;
         }
-        
+
         .exit-fullscreen {
             position: absolute;
             top: 20px;
@@ -635,11 +701,11 @@
             justify-content: center;
             transition: all 0.3s ease;
         }
-        
+
         .exit-fullscreen:hover {
             background: rgba(255, 255, 255, 0.3);
         }
-        
+
         .fullscreen-credit {
             position: absolute;
             bottom: 20px;
@@ -649,68 +715,112 @@
             color: rgba(255, 255, 255, 0.7);
             font-size: 0.9rem;
         }
-        
+
         .fullscreen-credit a {
             color: var(--accent);
             text-decoration: none;
             font-weight: bold;
             transition: color 0.3s ease;
         }
-        
+
         .fullscreen-credit a:hover {
             color: white;
             text-decoration: underline;
         }
-        
+
         @media (max-width: 768px) {
             .event {
                 flex-direction: column;
             }
-            
+
             .event-time {
                 flex-direction: row;
                 justify-content: space-between;
                 min-width: auto;
             }
-            
+
             .event-image {
                 width: 100%;
                 height: 120px;
             }
-            
+
             .countdown {
                 flex-wrap: wrap;
             }
-            
+
             .countdown-item {
                 min-width: 60px;
             }
-            
+
             .fullscreen-title {
                 font-size: 1.8rem;
             }
-            
+
             .slide-time {
                 font-size: 1.8rem;
             }
-            
+
             .slide-title {
                 font-size: 1.5rem;
             }
-            
+
             .slide-description {
                 font-size: 1.1rem;
             }
         }
+
+        /* DESKTOP */
+        @media (min-width: 900px) {
+            .banner-feira {
+                flex: 1.2;
+                height: 350px;
+                max-height: 350px;
+                overflow: hidden;
+                border-radius: 12px;
+            }
+
+            .banner-feira img {
+                width: 100%;
+                height: 100% !important;
+                object-fit: cover;
+                border-radius: 12px;
+            }
+
+            .div-countdown-container {
+                flex: 1;
+            }
+        }
+
+        /* MOBILE */
+        @media (max-width: 899px) {
+            .banner-feira {
+                width: 100%;
+            }
+
+            .banner-feira img {
+                width: 100%;
+                height: auto;
+                object-fit: cover;
+                border-radius: 12px;
+            }
+        }
+
+        /* 🔥 OCULTAR QR CODE NO CELULAR */
+        @media (max-width: 600px) {
+            .fullscreen-qrcode {
+                display: none;
+            }
+        }
     </style>
 </head>
+
 <body>
     <header>
         <div class="container">
             <div class="header-content">
                 <div class="logo-container">
                     <div class="logo">
-                        <img src="https://ulasoftware-feiradeprofissoes.netlify.app/assets/images/logo-feira-de-profissoes.PNG" alt="Centro Educa Mais">
+                        <img src="assets/images/cem-ribeiro-do-amaral.jpeg" alt="Centro Educa Mais">
                     </div>
                     <div class="event-title">
                         <h1>Feira de Profissões</h1>
@@ -720,56 +830,66 @@
             </div>
         </div>
     </header>
-    
+
     <div class="container">
-        <div class="countdown-container">
-            <h2 class="countdown-title">Contagem Regressiva para o Evento</h2>
-            <div class="countdown">
-                <div class="countdown-item">
-                    <div class="countdown-number" id="days">00</div>
-                    <div class="countdown-label">Dias</div>
-                </div>
-                <div class="countdown-item">
-                    <div class="countdown-number" id="hours">00</div>
-                    <div class="countdown-label">Horas</div>
-                </div>
-                <div class="countdown-item">
-                    <div class="countdown-number" id="minutes">00</div>
-                    <div class="countdown-label">Minutos</div>
-                </div>
-                <div class="countdown-item">
-                    <div class="countdown-number" id="seconds">00</div>
-                    <div class="countdown-label">Segundos</div>
+        <div class="banner-countdown-wrapper">
+
+            <div class="banner-feira">
+                <img src="assets/images/detalhe-cronograma.jpg" alt="Banner da Feira">
+            </div>
+
+            <div class="div-countdown-container">
+                <!-- TODO O SEU COUNTDOWN AQUI -->
+                <h2 class="countdown-title">Contagem Regressiva</h2>
+                <div class="countdown">
+                    <div class="countdown-item">
+                        <div class="countdown-number" id="days">00</div>
+                        <div class="countdown-label">Dias</div>
+                    </div>
+                    <div class="countdown-item">
+                        <div class="countdown-number" id="hours">00</div>
+                        <div class="countdown-label">Horas</div>
+                    </div>
+                    <div class="countdown-item">
+                        <div class="countdown-number" id="minutes">00</div>
+                        <div class="countdown-label">Minutos</div>
+                    </div>
+                    <div class="countdown-item">
+                        <div class="countdown-number" id="seconds">00</div>
+                        <div class="countdown-label">Segundos</div>
+                    </div>
                 </div>
             </div>
+
         </div>
-        
+
+
         <div class="event-alert" id="tomorrow-alert">
             <i class="fas fa-bullhorn"></i> É amanhã a Feira de Profissões!
         </div>
-        
+
         <div class="event-alert" id="today-alert">
             <i class="fas fa-calendar-day"></i> A Feira de Profissões está acontecendo agora!
         </div>
-        
+
         <div class="schedule-container">
             <h2 class="schedule-title">Cronograma do Evento</h2>
-            
+
             <div class="day-tabs">
                 <div class="day-tab active" data-day="day1">Dia 1 - 28 de Novembro</div>
-                <div class="day-tab" data-day="day2" id="day2-tab">Dia 2 - 29 de Novembro</div>
+                <div class="day-tab " data-day="day2" id="day2-tab">Dia 2 - 29 de Novembro</div>
             </div>
-            
+
             <div class="schedule active" id="day1-schedule">
                 <!-- Eventos do Dia 1 serão inseridos aqui pelo JavaScript -->
             </div>
-            
+
             <div class="schedule" id="day2-schedule">
                 <!-- Eventos do Dia 2 serão inseridos aqui pelo JavaScript -->
             </div>
         </div>
     </div>
-    
+
     <footer>
         <div class="container">
             <div class="footer-content">
@@ -779,12 +899,16 @@
                     <p>CEP 65137-000 – São José de Ribamar - MA</p>
                 </div>
                 <div class="social-links">
-                    <a href="https://www.instagram.com/cemribeirodoamaral/" class="social-link"><i class="fab fa-facebook-f"></i></a>
-                    <a href="https://www.instagram.com/cemribeirodoamaral/" class="social-link"><i class="fab fa-instagram"></i></a>
-                    <a href="https://www.instagram.com/cemribeirodoamaral/" class="social-link"><i class="fab fa-youtube"></i></a>
+                    <a href="https://www.instagram.com/cemribeirodoamaral/" class="social-link"><i
+                            class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/cemribeirodoamaral/" class="social-link"><i
+                            class="fab fa-instagram"></i></a>
+                    <a href="https://www.instagram.com/cemribeirodoamaral/" class="social-link"><i
+                            class="fab fa-youtube"></i></a>
                 </div>
                 <div class="dev-credit">
-                    <p>Desenvolvido por <a href="https://www.ulasoftware.com.br" target="_blank">Ulasoftware Tecnologia</a></p>
+                    <p>Desenvolvido por <a href="https://www.ulasoftware.com.br" target="_blank">Ulasoftware
+                            Tecnologia</a></p>
                 </div>
             </div>
         </div>
@@ -797,23 +921,28 @@
 
     <!-- Modo Tela Cheia -->
     <div class="fullscreen-container" id="fullscreen-container">
+        <div class="fullscreen-qrcode">
+            <img src="assets/images/qr-code-feira.jpg" alt="QR Code Cronograma">
+            <p>📱 Aponte a camera do seu Celular!</p>
+        </div>
+
         <button class="exit-fullscreen" id="exit-fullscreen">
             <i class="fas fa-times"></i>
         </button>
-        
+
         <div class="fullscreen-header">
             <div class="fullscreen-logo">
-                <img src="https://ulasoftware-feiradeprofissoes.netlify.app/assets/images/logo-feira-de-profissoes.PNG" alt="Centro Educa Mais">
+                <img src="assets/images/logo-feira-940x788.jpg" alt="Centro Educa Mais">
             </div>
-            <h1 class="fullscreen-title">Feira de Profissões</h1>
-            <p class="fullscreen-subtitle">Centro Educa Mais Ribeiro do Amaral</p>
+            <h1 class="fullscreen-title">1ª Feira de Profissões</h1>
+            <p class="fullscreen-subtitle">Centro Educa Mais <strong>Ribeiro do Amaral</strong></p>
         </div>
-        
+
         <div class="carousel-container">
             <div class="carousel-track" id="carousel-track">
                 <!-- Slides serão inseridos aqui pelo JavaScript -->
             </div>
-            
+
             <button class="carousel-nav carousel-prev" id="carousel-prev">
                 <i class="fas fa-chevron-left"></i>
             </button>
@@ -821,11 +950,11 @@
                 <i class="fas fa-chevron-right"></i>
             </button>
         </div>
-        
+
         <div class="carousel-indicators" id="carousel-indicators">
             <!-- Indicadores serão inseridos aqui pelo JavaScript -->
         </div>
-        
+
         <div class="fullscreen-credit">
             <p>Desenvolvido por <a href="https://www.ulasoftware.com.br" target="_blank">Ulasoftware Tecnologia</a></p>
         </div>
@@ -833,9 +962,9 @@
 
     <script>
         // Datas do evento (28 e 29 de novembro de 2024)
-        const eventDateDay1 = new Date('2025-11-12T07:30:00');
-        const eventDateDay2 = new Date('2025-11-13T08:00:00');
-        
+        const eventDateDay1 = new Date('2025-11-14T07:30:00');
+        const eventDateDay2 = new Date('2025-11-15T08:00:00');
+
         // Dados do cronograma
         const scheduleData = {
             day1: [
@@ -845,7 +974,7 @@
                     description: "Acolhida dos participantes com monitores",
                     participants: "Monitores e equipe gestora",
                     location: "Hall de Entrada",
-                    image: "logo feira de profissoes.PNG?text=Recepção"
+                    image: "assets/images/detalhe-cronograma.jpg?text=Intervalo"
                 },
                 {
                     time: "08:00 – 08:15",
@@ -853,39 +982,39 @@
                     description: "Abertura oficial e execução do Hino Nacional, Estadual ou Municipal",
                     participants: "Direção do Centro, autoridades municipais convidadas e estudantes protagonistas",
                     location: "Auditório",
-                    image: "https://ulasoftware-feiradeprofissoes.netlify.app/assets/images/logo-feira-de-profissoes.PNG?text=Abertura"
+                    image: "assets/images/detalhe-cronograma.jpg?text=Abertura"
                 },
                 {
-                    time: "08:15 – 09:30",
+                    time: "08:15 – 09:00",
                     title: "Mesa-redonda",
                     description: "Juventude, Mundo do Trabalho e Empreendedorismo na Atualidade",
                     participants: "Mediador: XXXXXX – Mestre em XXXXXXXXXXX; Palestrantes: XXXXXX (Empresária); XXXXX (SINE); XXXXX (Aluna Egressa); XXXXXX (UEMA)",
                     location: "Auditório",
-                    image: "https://ulasoftware-feiradeprofissoes.netlify.app/assets/images/logo-feira-de-profissoes.PNG?text=Mesa"
+                    image: "assets/images/detalhe-cronograma.jpg?text=Mesa"
                 },
                 {
-                    time: "09:30 – 09:50",
-                    title: "Intervalo/Lanche",
-                    description: "",
-                    participants: "",
-                    location: "Pátio",
-                    image: "https://ulasoftware-feiradeprofissoes.netlify.app/assets/images/logo-feira-de-profissoes.PNG?text=Intervalo"
-                },
-                {
-                    time: "09:50 – 10:30",
+                    time: "09:00 – 10:00",
                     title: "Palestra",
-                    description: "O Futuro das Profissões Técnicas e as Novas Tecnologias",
-                    participants: "XXXXXXXXXXX – Especialista em XXXXXXXX",
+                    description: "Do Sonho ao Negócio: Como o Empreendedor Moderno usa o Marketing para Crescer em um Mundo Competitivo",
+                    participants: "Anne Gadelha - Empresária e criadora de conteúdo digital",
                     location: "Auditório",
-                    image: "https://ulasoftware-feiradeprofissoes.netlify.app/assets/images/logo-feira-de-profissoes.PNG?text=Palestra"
+                    image: "assets/images/detalhe-cronograma.jpg?text=Intervalo"
                 },
                 {
-                    time: "10:30 – 11:00",
+                    time: "10:00 – 10:30",
                     title: "Fala dos Protagonistas",
                     description: "Minha Formação Técnica como Ponto de Partida do Projeto de Vida",
                     participants: "Informática para Internet, 2º ano); XXXXXXX (Aluna do Curso de Administração, 2º ano)",
                     location: "Auditório",
-                    image: "https://ulasoftware-feiradeprofissoes.netlify.app/assets/images/logo-feira-de-profissoes.PNG?text=Protagonistas"
+                    image: "assets/images/detalhe-cronograma.jpg?text=Protagonistas"
+                },
+                {
+                    time: "10:30 – 11:00",
+                    title: "Palestra",
+                    description: "O Futuro das Profissões Técnicas e as Novas Tecnologias",
+                    participants: "XXXXXXXXXXX – Especialista em XXXXXXXX",
+                    location: "Auditório",
+                    image: "assets/images/detalhe-cronograma.jpg?text=Palestra"
                 },
                 {
                     time: "11:00 – 11:30",
@@ -893,7 +1022,7 @@
                     description: "Dança/Teatro/Poesia",
                     participants: "Grupo de Dança XXXXXXX – Centro Educa Mais",
                     location: "Auditório",
-                    image: "https://ulasoftware-feiradeprofissoes.netlify.app/assets/images/logo-feira-de-profissoes.PNG?text=Cultural"
+                    image: "assets/images/detalhe-cronograma.jpg?text=Cultural"
                 },
                 {
                     time: "11:30 – 13:20",
@@ -901,7 +1030,7 @@
                     description: "",
                     participants: "",
                     location: "Refeitório",
-                    image: "https://ulasoftware-feiradeprofissoes.netlify.app/assets/images/logo-feira-de-profissoes.PNG?text=Almoço"
+                    image: "assets/images/detalhe-cronograma.jpg?text=Almoço"
                 },
                 {
                     time: "13:20 – 14:50",
@@ -909,7 +1038,7 @@
                     description: "XXXXXXXXX – Doutor em Políticas XXXXXXXXXXXX",
                     participants: "",
                     location: "Auditório",
-                    image: "https://ulasoftware-feiradeprofissoes.netlify.app/assets/images/logo-feira-de-profissoes.PNG?text=Palestra"
+                    image: "assets/images/detalhe-cronograma.jpg?text=Palestra"
                 },
                 {
                     time: "14:50 – 15:15",
@@ -917,7 +1046,7 @@
                     description: "",
                     participants: "",
                     location: "Pátio",
-                    image: "https://ulasoftware-feiradeprofissoes.netlify.app/assets/images/logo-feira-de-profissoes.PNG?text=Intervalo"
+                    image: "assets/images/detalhe-cronograma.jpg?text=Intervalo"
                 },
                 {
                     time: "15:15 – 16:30",
@@ -925,7 +1054,7 @@
                     description: "Inovação, Sustentabilidade e Empregabilidade",
                     participants: "XXXXXXXXXX (Startup); Eng. XXXXXXXXXX (Empresa parceira); Profª. Dª. XXXXXXXXXX (Pesquisadora)",
                     location: "Auditório",
-                    image: "https://ulasoftware-feiradeprofissoes.netlify.app/assets/images/logo-feira-de-profissoes.PNG?text=Debate"
+                    image: "assets/images/detalhe-cronograma.jpg?text=Debate"
                 },
                 {
                     time: "16:30 – 17:00",
@@ -933,7 +1062,7 @@
                     description: "Pronunciamento final Salas temáticas, stands, protótipos, banners e oficinas práticas",
                     participants: "Direção do Centro Educa Mais",
                     location: "Auditório",
-                    image: "https://ulasoftware-feiradeprofissoes.netlify.app/assets/images/logo-feira-de-profissoes.PNG?text=Encerramento"
+                    image: "assets/images/detalhe-cronograma.jpg?text=Encerramento"
                 }
             ],
             day2: [
@@ -943,7 +1072,7 @@
                     description: "",
                     participants: "Professores da BT e estudantes dos cursos técnicos",
                     location: "Salas de Aula",
-                    image: "https://ulasoftware-feiradeprofissoes.netlify.app/assets/images/logo-feira-de-profissoes.PNG?text=Exposição"
+                    image: "assets/images/detalhe-cronograma.jpg?text=Exposição"
                 },
                 {
                     time: "11:30 – 13:20",
@@ -951,31 +1080,39 @@
                     description: "",
                     participants: "",
                     location: "Refeitório",
-                    image: "https://ulasoftware-feiradeprofissoes.netlify.app/assets/images/logo-feira-de-profissoes.PNG?text=Almoço"
+                    image: "assets/images/detalhe-cronograma.jpg?text=Almoço"
                 },
                 {
-                    time: "13:20 – 15:00",
+                    time: "13:20 – 14:30",
                     title: "Atividades Inovadoras",
                     description: "Mostra de projetos, oficinas interativas, feira de ideias e startups",
                     participants: "Estudantes protagonistas",
                     location: "Salas de Aula / Pátio",
-                    image: "https://ulasoftware-feiradeprofissoes.netlify.app/assets/images/logo-feira-de-profissoes.PNG?text=Inovação"
+                    image: "assets/images/detalhe-cronograma.jpg?text=Inovação"
                 },
                 {
-                    time: "15:00 – 15:30",
+                    time: "14:30 – 15:30",
+                    title: "Palestra",
+                    description: "Empreendedorismo no Brasil - O futuro nasce onde ninguém acredita.",
+                    participants: "Anthony Campelo e João Porto - Confundadores e CEOs da 4Brands",
+                    location: "Auditório",
+                    image: "assets/images/detalhe-cronograma.jpg?text=Palestra"
+                },
+                {
+                    time: "15:30 – 16:00",
                     title: "Intervalo/Lanche",
                     description: "",
                     participants: "",
                     location: "Pátio",
-                    image: "https://ulasoftware-feiradeprofissoes.netlify.app/assets/images/logo-feira-de-profissoes.PNG?text=Intervalo"
+                    image: "assets/images/detalhe-cronograma.jpg?text=Intervalo"
                 },
                 {
-                    time: "15:30 – 16:30",
+                    time: "16:00 – 16:30",
                     title: "Cerimônia de Encerramento",
                     description: "",
                     participants: "",
                     location: "Auditório",
-                    image: "https://ulasoftware-feiradeprofissoes.netlify.app/assets/images/logo-feira-de-profissoes.PNG?text=Encerramento"
+                    image: "assets/images/logo-detalhe-cronograma.jpg?text=Encerramento"
                 }
             ]
         };
@@ -989,31 +1126,31 @@
         function updateCountdown() {
             const now = new Date();
             const timeDiffDay1 = eventDateDay1 - now;
-            
+
             // Verificar se é um dia antes do evento
             const tomorrow = new Date();
             tomorrow.setDate(tomorrow.getDate() + 1);
-            
+
             if (tomorrow.toDateString() === eventDateDay1.toDateString()) {
                 document.getElementById('tomorrow-alert').style.display = 'block';
             } else {
                 document.getElementById('tomorrow-alert').style.display = 'none';
             }
-            
+
             // Verificar se é o dia do evento
             if (now.toDateString() === eventDateDay1.toDateString() || now.toDateString() === eventDateDay2.toDateString()) {
                 document.getElementById('today-alert').style.display = 'block';
             } else {
                 document.getElementById('today-alert').style.display = 'none';
             }
-            
+
             // Atualizar contagem regressiva para o dia 1
             if (timeDiffDay1 > 0) {
                 const days = Math.floor(timeDiffDay1 / (1000 * 60 * 60 * 24));
                 const hours = Math.floor((timeDiffDay1 % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
                 const minutes = Math.floor((timeDiffDay1 % (1000 * 60 * 60)) / (1000 * 60));
                 const seconds = Math.floor((timeDiffDay1 % (1000 * 60)) / 1000);
-                
+
                 document.getElementById('days').textContent = days.toString().padStart(2, '0');
                 document.getElementById('hours').textContent = hours.toString().padStart(2, '0');
                 document.getElementById('minutes').textContent = minutes.toString().padStart(2, '0');
@@ -1025,30 +1162,30 @@
                 document.getElementById('seconds').textContent = '00';
             }
         }
-        
+
         // Função para renderizar os eventos
         function renderEvents() {
             const now = new Date();
-            
+
             for (const day in scheduleData) {
                 const scheduleElement = document.getElementById(`${day}-schedule`);
                 scheduleElement.innerHTML = '';
-                
+
                 // Verificar se o dia do evento já começou
                 const eventDate = day === 'day1' ? eventDateDay1 : eventDateDay2;
                 const dayStarted = now >= eventDate;
-                
+
                 scheduleData[day].forEach(event => {
                     const eventElement = document.createElement('div');
                     eventElement.className = 'event';
-                    
+
                     // Determinar status do evento
                     const eventStartTime = new Date(`${eventDate.toDateString()} ${event.time.split(' – ')[0]}`);
                     const eventEndTime = new Date(`${eventDate.toDateString()} ${event.time.split(' – ')[1]}`);
-                    
+
                     let status = 'upcoming';
                     let statusText = 'Próximo';
-                    
+
                     if (now >= eventStartTime && now <= eventEndTime) {
                         status = 'ongoing';
                         statusText = 'Em andamento';
@@ -1056,13 +1193,13 @@
                         status = 'completed';
                         statusText = 'Finalizado';
                     }
-                    
+
                     // Se o dia do evento ainda não começou, mostrar todos os eventos como inativos
                     if (!dayStarted) {
                         status = 'inactive';
                         statusText = 'Aguardando início do evento';
                     }
-                    
+
                     eventElement.innerHTML = `
                         <div class="event-time">
                             <div class="time">${event.time}</div>
@@ -1083,11 +1220,11 @@
                             <img src="${event.image}" alt="${event.title}">
                         </div>
                     `;
-                    
+
                     scheduleElement.appendChild(eventElement);
                 });
             }
-            
+
             // Controlar a aba do dia 2
             const day2Tab = document.getElementById('day2-tab');
             if (now < eventDateDay2) {
@@ -1095,16 +1232,16 @@
             } else {
                 day2Tab.classList.remove('disabled');
             }
-            
+
             // Atualizar eventos para o carrossel
             updateCarouselEvents();
         }
-        
+
         // Função para atualizar eventos do carrossel
         function updateCarouselEvents() {
             const now = new Date();
             carouselEvents = [];
-            
+
             // Verificar qual dia está ativo
             let activeDay = 'day1';
             if (now >= eventDateDay2) {
@@ -1112,18 +1249,18 @@
             } else if (now >= eventDateDay1) {
                 activeDay = 'day1';
             }
-            
+
             const eventDate = activeDay === 'day1' ? eventDateDay1 : eventDateDay2;
-            
+
             // Encontrar eventos: finalizado, em andamento e próximo
             let completedEvent = null;
             let ongoingEvent = null;
             let upcomingEvent = null;
-            
+
             for (const event of scheduleData[activeDay]) {
                 const eventStartTime = new Date(`${eventDate.toDateString()} ${event.time.split(' – ')[0]}`);
                 const eventEndTime = new Date(`${eventDate.toDateString()} ${event.time.split(' – ')[1]}`);
-                
+
                 if (now > eventEndTime) {
                     completedEvent = event;
                 } else if (now >= eventStartTime && now <= eventEndTime) {
@@ -1134,28 +1271,28 @@
                     }
                 }
             }
-            
+
             // Adicionar eventos ao carrossel
-            if (completedEvent) carouselEvents.push({...completedEvent, status: 'completed'});
-            if (ongoingEvent) carouselEvents.push({...ongoingEvent, status: 'ongoing'});
-            if (upcomingEvent) carouselEvents.push({...upcomingEvent, status: 'upcoming'});
-            
+            if (completedEvent) carouselEvents.push({ ...completedEvent, status: 'completed' });
+            if (ongoingEvent) carouselEvents.push({ ...ongoingEvent, status: 'ongoing' });
+            if (upcomingEvent) carouselEvents.push({ ...upcomingEvent, status: 'upcoming' });
+
             // Se não houver eventos em andamento, mostrar apenas próximos
             if (carouselEvents.length === 0 && scheduleData[activeDay].length > 0) {
-                carouselEvents.push({...scheduleData[activeDay][0], status: 'upcoming'});
+                carouselEvents.push({ ...scheduleData[activeDay][0], status: 'upcoming' });
             }
-            
+
             renderCarousel();
         }
-        
+
         // Função para renderizar o carrossel
         function renderCarousel() {
             const carouselTrack = document.getElementById('carousel-track');
             const carouselIndicators = document.getElementById('carousel-indicators');
-            
+
             carouselTrack.innerHTML = '';
             carouselIndicators.innerHTML = '';
-            
+
             if (carouselEvents.length === 0) {
                 const emptySlide = document.createElement('div');
                 emptySlide.className = 'carousel-slide';
@@ -1168,22 +1305,22 @@
                     <div class="slide-description">Os eventos serão exibidos aqui quando começarem</div>
                 `;
                 carouselTrack.appendChild(emptySlide);
-                
+
                 const indicator = document.createElement('div');
                 indicator.className = 'carousel-indicator active';
                 carouselIndicators.appendChild(indicator);
-                
+
                 return;
             }
-            
+
             carouselEvents.forEach((event, index) => {
                 const slide = document.createElement('div');
                 slide.className = `carousel-slide ${event.status}`;
-                
+
                 let icon = 'far fa-clock';
                 if (event.status === 'completed') icon = 'fas fa-check-circle';
                 if (event.status === 'ongoing') icon = 'fas fa-play-circle';
-                
+
                 slide.innerHTML = `
                     <div class="slide-time">
                         <i class="${icon}"></i>
@@ -1195,30 +1332,30 @@
                         <i class="fas fa-map-marker-alt"></i> ${event.location}
                     </div>
                 `;
-                
+
                 carouselTrack.appendChild(slide);
-                
+
                 const indicator = document.createElement('div');
                 indicator.className = `carousel-indicator ${index === currentSlide ? 'active' : ''}`;
                 indicator.addEventListener('click', () => goToSlide(index));
                 carouselIndicators.appendChild(indicator);
             });
-            
+
             updateCarouselPosition();
         }
-        
+
         // Função para atualizar a posição do carrossel
         function updateCarouselPosition() {
             const carouselTrack = document.getElementById('carousel-track');
             carouselTrack.style.transform = `translateX(-${currentSlide * 100}%)`;
-            
+
             // Atualizar indicadores
             const indicators = document.querySelectorAll('.carousel-indicator');
             indicators.forEach((indicator, index) => {
                 indicator.classList.toggle('active', index === currentSlide);
             });
         }
-        
+
         // Função para ir para um slide específico
         function goToSlide(slideIndex) {
             if (slideIndex < 0 || slideIndex >= carouselEvents.length) return;
@@ -1226,21 +1363,21 @@
             updateCarouselPosition();
             resetCarouselInterval();
         }
-        
+
         // Função para próximo slide
         function nextSlide() {
             currentSlide = (currentSlide + 1) % carouselEvents.length;
             updateCarouselPosition();
             resetCarouselInterval();
         }
-        
+
         // Função para slide anterior
         function prevSlide() {
             currentSlide = (currentSlide - 1 + carouselEvents.length) % carouselEvents.length;
             updateCarouselPosition();
             resetCarouselInterval();
         }
-        
+
         // Função para reiniciar o intervalo do carrossel
         function resetCarouselInterval() {
             if (carouselInterval) {
@@ -1250,14 +1387,14 @@
                 carouselInterval = setInterval(nextSlide, 5000);
             }
         }
-        
+
         // Função para entrar no modo tela cheia
         function enterFullscreen() {
             document.body.classList.add('fullscreen-mode');
             updateCarouselEvents();
             resetCarouselInterval();
         }
-        
+
         // Função para sair do modo tela cheia
         function exitFullscreen() {
             document.body.classList.remove('fullscreen-mode');
@@ -1265,53 +1402,65 @@
                 clearInterval(carouselInterval);
             }
         }
-        
+
         // Inicialização
-        document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function () {
             updateCountdown();
             renderEvents();
-            
+
             // Atualizar contagem regressiva a cada segundo
             setInterval(updateCountdown, 1000);
-            
+
             // Atualizar eventos a cada minuto
             setInterval(renderEvents, 60000);
-            
+
             // Alternar entre dias
             document.querySelectorAll('.day-tab').forEach(tab => {
-                tab.addEventListener('click', function() {
+                tab.addEventListener('click', function () {
                     if (this.classList.contains('disabled')) return;
-                    
+
                     // Remover classe active de todas as abas
                     document.querySelectorAll('.day-tab').forEach(t => {
                         t.classList.remove('active');
                     });
-                    
+
                     // Adicionar classe active à aba clicada
                     this.classList.add('active');
-                    
+
                     // Esconder todos os cronogramas
                     document.querySelectorAll('.schedule').forEach(schedule => {
                         schedule.classList.remove('active');
                     });
-                    
+
                     // Mostrar o cronograma correspondente
                     const day = this.getAttribute('data-day');
                     document.getElementById(`${day}-schedule`).classList.add('active');
                 });
             });
-            
+
             // Configurar botões do carrossel
             document.getElementById('carousel-prev').addEventListener('click', prevSlide);
             document.getElementById('carousel-next').addEventListener('click', nextSlide);
-            
+
             // Configurar botão de tela cheia
             document.getElementById('fullscreen-btn').addEventListener('click', enterFullscreen);
             document.getElementById('exit-fullscreen').addEventListener('click', exitFullscreen);
-            
+
             // Inicializar carrossel
             updateCarouselEvents();
         });
+
+        // Verifica se está em modo celular (largura menor que 768px)
+        const isMobile = window.matchMedia("(max-width: 768px)").matches;
+
+        if (isMobile) {
+            schedule.forEach(item => {
+                if (item.image === "assets/images/detalhe-cronograma.jpg?text=Intervalo") {
+                    item.image = "assets/images/detalhe-cronograma.jpg?text=Intervalo";
+                }
+            });
+        }
     </script>
 </body>
+
 </html>
