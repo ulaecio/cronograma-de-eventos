@@ -343,7 +343,8 @@
         }
 
         .event-image {
-
+            width: 20rem;
+            height: 10rem;
             background-color: #f0f0f0;
             display: flex;
             align-items: center;
@@ -587,8 +588,8 @@
         }
 
         .carousel-slide.ongoing {
-            background: rgba(251, 188, 4, 0.3);
-            border: 3px solid var(--accent);
+            background: rgba(40, 167, 69, 0.2);
+            border: 3px solid var(--success);
         }
 
         .carousel-slide.upcoming {
@@ -606,6 +607,35 @@
         .slide-time i {
             margin-right: 15px;
             font-size: 2rem;
+        }
+
+        .slide-time .fa-check-circle {
+            color: #7c7c7b;
+        }
+
+        .slide-time .fa-play-circle {
+            color: #ffc107;
+            animation: blink 1s infinite;
+            /* Aplica a animação 'blink' */
+        }
+
+        /* Definindo a animação 'blink' */
+        @keyframes blink {
+            0% {
+                opacity: 1;
+            }
+
+            50% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        .slide-time .fa-clock {
+            color: #fbbc04;
         }
 
         .slide-title {
@@ -627,6 +657,7 @@
             font-size: 1.2rem;
             display: flex;
             align-items: center;
+            color: #ffffff;
         }
 
         .slide-location i {
@@ -960,8 +991,8 @@
 
     <script>
         // Datas do evento (28 e 29 de novembro de 2024)
-        const eventDateDay1 = new Date('2025-11-16T07:30:00');
-        const eventDateDay2 = new Date('2025-11-17T08:00:00');
+        const eventDateDay1 = new Date('2025-11-15T07:30:00');
+        const eventDateDay2 = new Date('2025-11-16T08:00:00');
 
         // Dados do cronograma
         const scheduleData = {
@@ -986,7 +1017,7 @@
                     time: "08:15 – 09:00",
                     title: "Mesa-redonda",
                     description: "Juventude, Mundo do Trabalho e Empreendedorismo na Atualidade",
-                    participants: "Mediador: XXXXXX – Mestre em XXXXXXXXXXX; Palestrantes: XXXXXX (Empresária); XXXXX (SINE); XXXXX (Aluna Egressa); XXXXXX (UEMA)",
+                    participants: "Mediador:  Carorine – Jornalista e Professora em Marketing",
                     location: "Auditório",
                     image: "assets/images/detalhe-cronograma-1080x1080.jpg?text=Mesa"
                 },
@@ -1002,28 +1033,28 @@
                     time: "10:00 – 10:30",
                     title: "Fala dos Protagonistas",
                     description: "Minha Formação Técnica como Ponto de Partida do Projeto de Vida",
-                    participants: "Informática para Internet, 2º ano); XXXXXXX (Aluna do Curso de Administração, 2º ano)",
+                    participants: "Informática para Internet, 2º ano);(Aluna do Curso de Marketing, 2º ano)",
                     location: "Auditório",
                     image: "assets/images/detalhe-cronograma-1080x1080.jpg?text=Protagonistas"
                 },
                 {
-                    time: "10:30 – 11:00",
+                    time: "10:30 – 11:30",
                     title: "Palestra",
                     description: "O Futuro das Profissões Técnicas e as Novas Tecnologias",
-                    participants: "XXXXXXXXXXX – Especialista em XXXXXXXX",
+                    participants: "Confirmando... Profissional UNDB – Especialista UNDB",
                     location: "Auditório",
                     image: "assets/images/detalhe-cronograma-1080x1080.jpg?text=Palestra"
                 },
                 {
-                    time: "11:00 – 11:30",
+                    time: "11:20 – 11:50",
                     title: "Apresentação Cultural",
                     description: "Dança/Teatro/Poesia",
-                    participants: "Grupo de Dança XXXXXXX – Centro Educa Mais",
+                    participants: "Confirmando...",
                     location: "Auditório",
                     image: "assets/images/detalhe-cronograma-1080x1080.jpg?text=Cultural"
                 },
                 {
-                    time: "11:30 – 13:20",
+                    time: "11:00 – 13:20",
                     title: "Intervalo – Almoço",
                     description: "",
                     participants: "",
@@ -1033,7 +1064,7 @@
                 {
                     time: "13:20 – 14:50",
                     title: "Palestra",
-                    description: "XXXXXXXXX – Doutor em Políticas XXXXXXXXXXXX",
+                    description: "Confirmando ...",
                     participants: "",
                     location: "Auditório",
                     image: "assets/images/detalhe-cronograma-1080x1080.jpg?text=Palestra"
@@ -1050,7 +1081,7 @@
                     time: "15:15 – 16:30",
                     title: "Debate Temático",
                     description: "Inovação, Sustentabilidade e Empregabilidade",
-                    participants: "XXXXXXXXXX (Startup); Eng. XXXXXXXXXX (Empresa parceira); Profª. Dª. XXXXXXXXXX (Pesquisadora)",
+                    participants: "Confirmando...",
                     location: "Auditório",
                     image: "assets/images/detalhe-cronograma-1080x1080.jpg?text=Debate"
                 },
@@ -1186,7 +1217,7 @@
 
                     if (now >= eventStartTime && now <= eventEndTime) {
                         status = 'ongoing';
-                        statusText = 'Em andamento';
+                        statusText = 'Acontecendo Agora';
                     } else if (now > eventEndTime) {
                         status = 'completed';
                         statusText = 'Finalizado';
@@ -1316,8 +1347,8 @@
                 slide.className = `carousel-slide ${event.status}`;
 
                 let icon = 'far fa-clock';
-                if (event.status === 'completed') icon = 'fas fa-check-circle fa-4x';
-                if (event.status === 'ongoing') icon = 'fas fa-play-circle fa-4x';
+                if (event.status === 'completed') icon = 'fas fa-check-circle';
+                if (event.status === 'ongoing') icon = 'fas fa-play-circle';
 
                 slide.innerHTML = `
                     <div class="slide-time">
