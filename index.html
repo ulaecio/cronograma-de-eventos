@@ -124,7 +124,7 @@
             background-color: white;
             border-radius: 12px;
             padding: 20px;
-            margin: 20px 0;
+            /* margin: 20px 0; */
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
             text-align: center;
             display: flex;
@@ -343,7 +343,7 @@
         }
 
         .event-image {
-            width: 100px;
+
             background-color: #f0f0f0;
             display: flex;
             align-items: center;
@@ -370,11 +370,11 @@
         }
 
         .status-upcoming {
-            background-color: var(--warning);
+            background-color: #fbbc04;
         }
 
         .status-ongoing {
-            background-color: var(--success);
+            background-color: greenyellow;
             animation: pulse 1.5s infinite;
         }
 
@@ -773,7 +773,7 @@
         @media (min-width: 900px) {
             .banner-feira {
                 flex: 1.2;
-                height: 350px;
+                height: 200px;
                 max-height: 350px;
                 overflow: hidden;
                 border-radius: 12px;
@@ -824,7 +824,7 @@
                     </div>
                     <div class="event-title">
                         <h1>Feira de Profissões</h1>
-                        <p>Centro Educa Mais Ribeiro do Amaral</p>
+                        <p>Centro Educa Mais <strong>Ribeiro do Amaral</strong></p>
                     </div>
                 </div>
             </div>
@@ -835,7 +835,7 @@
         <div class="banner-countdown-wrapper">
 
             <div class="banner-feira">
-                <img src="assets/images/detalhe-cronograma.jpg" alt="Banner da Feira">
+                <img src="assets/images/banner-feira/2.jpg" alt="Banner da Feira">
             </div>
 
             <div class="div-countdown-container">
@@ -876,8 +876,8 @@
             <h2 class="schedule-title">Cronograma do Evento</h2>
 
             <div class="day-tabs">
-                <div class="day-tab active" data-day="day1">Dia 1 - 28 de Novembro</div>
-                <div class="day-tab " data-day="day2" id="day2-tab">Dia 2 - 29 de Novembro</div>
+                <div class="day-tab active" data-day="day1">Dia 1 - 27 de Novembro</div>
+                <div class="day-tab " data-day="day2" id="day2-tab">Dia 2 - 28 de Novembro</div>
             </div>
 
             <div class="schedule active" id="day1-schedule">
@@ -931,11 +931,9 @@
         </button>
 
         <div class="fullscreen-header">
-            <div class="fullscreen-logo">
-                <img src="assets/images/logo-feira-940x788.jpg" alt="Centro Educa Mais">
+            <div class="banner-feira">
+                <img src="assets/images/banner-feira/2.jpg" alt="Centro Educa Mais">
             </div>
-            <h1 class="fullscreen-title">1ª Feira de Profissões</h1>
-            <p class="fullscreen-subtitle">Centro Educa Mais <strong>Ribeiro do Amaral</strong></p>
         </div>
 
         <div class="carousel-container">
@@ -962,8 +960,8 @@
 
     <script>
         // Datas do evento (28 e 29 de novembro de 2024)
-        const eventDateDay1 = new Date('2025-11-14T07:30:00');
-        const eventDateDay2 = new Date('2025-11-15T08:00:00');
+        const eventDateDay1 = new Date('2025-11-16T07:30:00');
+        const eventDateDay2 = new Date('2025-11-17T08:00:00');
 
         // Dados do cronograma
         const scheduleData = {
@@ -974,7 +972,7 @@
                     description: "Acolhida dos participantes com monitores",
                     participants: "Monitores e equipe gestora",
                     location: "Hall de Entrada",
-                    image: "assets/images/detalhe-cronograma.jpg?text=Intervalo"
+                    image: "assets/images/detalhe-cronograma-1080x1080.jpg?text=Intervalo"
                 },
                 {
                     time: "08:00 – 08:15",
@@ -982,7 +980,7 @@
                     description: "Abertura oficial e execução do Hino Nacional, Estadual ou Municipal",
                     participants: "Direção do Centro, autoridades municipais convidadas e estudantes protagonistas",
                     location: "Auditório",
-                    image: "assets/images/detalhe-cronograma.jpg?text=Abertura"
+                    image: "assets/images/detalhe-cronograma-1080x1080.jpg?text=Abertura"
                 },
                 {
                     time: "08:15 – 09:00",
@@ -990,7 +988,7 @@
                     description: "Juventude, Mundo do Trabalho e Empreendedorismo na Atualidade",
                     participants: "Mediador: XXXXXX – Mestre em XXXXXXXXXXX; Palestrantes: XXXXXX (Empresária); XXXXX (SINE); XXXXX (Aluna Egressa); XXXXXX (UEMA)",
                     location: "Auditório",
-                    image: "assets/images/detalhe-cronograma.jpg?text=Mesa"
+                    image: "assets/images/detalhe-cronograma-1080x1080.jpg?text=Mesa"
                 },
                 {
                     time: "09:00 – 10:00",
@@ -998,7 +996,7 @@
                     description: "Do Sonho ao Negócio: Como o Empreendedor Moderno usa o Marketing para Crescer em um Mundo Competitivo",
                     participants: "Anne Gadelha - Empresária e criadora de conteúdo digital",
                     location: "Auditório",
-                    image: "assets/images/detalhe-cronograma.jpg?text=Intervalo"
+                    image: "assets/images/detalhe-cronograma-1080x1080.jpg?text=Intervalo"
                 },
                 {
                     time: "10:00 – 10:30",
@@ -1006,7 +1004,7 @@
                     description: "Minha Formação Técnica como Ponto de Partida do Projeto de Vida",
                     participants: "Informática para Internet, 2º ano); XXXXXXX (Aluna do Curso de Administração, 2º ano)",
                     location: "Auditório",
-                    image: "assets/images/detalhe-cronograma.jpg?text=Protagonistas"
+                    image: "assets/images/detalhe-cronograma-1080x1080.jpg?text=Protagonistas"
                 },
                 {
                     time: "10:30 – 11:00",
@@ -1014,7 +1012,7 @@
                     description: "O Futuro das Profissões Técnicas e as Novas Tecnologias",
                     participants: "XXXXXXXXXXX – Especialista em XXXXXXXX",
                     location: "Auditório",
-                    image: "assets/images/detalhe-cronograma.jpg?text=Palestra"
+                    image: "assets/images/detalhe-cronograma-1080x1080.jpg?text=Palestra"
                 },
                 {
                     time: "11:00 – 11:30",
@@ -1022,7 +1020,7 @@
                     description: "Dança/Teatro/Poesia",
                     participants: "Grupo de Dança XXXXXXX – Centro Educa Mais",
                     location: "Auditório",
-                    image: "assets/images/detalhe-cronograma.jpg?text=Cultural"
+                    image: "assets/images/detalhe-cronograma-1080x1080.jpg?text=Cultural"
                 },
                 {
                     time: "11:30 – 13:20",
@@ -1030,7 +1028,7 @@
                     description: "",
                     participants: "",
                     location: "Refeitório",
-                    image: "assets/images/detalhe-cronograma.jpg?text=Almoço"
+                    image: "assets/images/detalhe-cronograma-1080x1080.jpg?text=Almoço"
                 },
                 {
                     time: "13:20 – 14:50",
@@ -1038,7 +1036,7 @@
                     description: "XXXXXXXXX – Doutor em Políticas XXXXXXXXXXXX",
                     participants: "",
                     location: "Auditório",
-                    image: "assets/images/detalhe-cronograma.jpg?text=Palestra"
+                    image: "assets/images/detalhe-cronograma-1080x1080.jpg?text=Palestra"
                 },
                 {
                     time: "14:50 – 15:15",
@@ -1046,7 +1044,7 @@
                     description: "",
                     participants: "",
                     location: "Pátio",
-                    image: "assets/images/detalhe-cronograma.jpg?text=Intervalo"
+                    image: "assets/images/detalhe-cronograma-1080x1080.jpg?text=Intervalo"
                 },
                 {
                     time: "15:15 – 16:30",
@@ -1054,7 +1052,7 @@
                     description: "Inovação, Sustentabilidade e Empregabilidade",
                     participants: "XXXXXXXXXX (Startup); Eng. XXXXXXXXXX (Empresa parceira); Profª. Dª. XXXXXXXXXX (Pesquisadora)",
                     location: "Auditório",
-                    image: "assets/images/detalhe-cronograma.jpg?text=Debate"
+                    image: "assets/images/detalhe-cronograma-1080x1080.jpg?text=Debate"
                 },
                 {
                     time: "16:30 – 17:00",
@@ -1062,7 +1060,7 @@
                     description: "Pronunciamento final Salas temáticas, stands, protótipos, banners e oficinas práticas",
                     participants: "Direção do Centro Educa Mais",
                     location: "Auditório",
-                    image: "assets/images/detalhe-cronograma.jpg?text=Encerramento"
+                    image: "assets/images/detalhe-cronograma-1080x1080.jpg?text=Encerramento"
                 }
             ],
             day2: [
@@ -1072,7 +1070,7 @@
                     description: "",
                     participants: "Professores da BT e estudantes dos cursos técnicos",
                     location: "Salas de Aula",
-                    image: "assets/images/detalhe-cronograma.jpg?text=Exposição"
+                    image: "assets/images/detalhe-cronograma-1080x1080.jpg?text=Exposição"
                 },
                 {
                     time: "11:30 – 13:20",
@@ -1080,7 +1078,7 @@
                     description: "",
                     participants: "",
                     location: "Refeitório",
-                    image: "assets/images/detalhe-cronograma.jpg?text=Almoço"
+                    image: "assets/images/detalhe-cronograma-1080x1080.jpg?text=Almoço"
                 },
                 {
                     time: "13:20 – 14:30",
@@ -1088,7 +1086,7 @@
                     description: "Mostra de projetos, oficinas interativas, feira de ideias e startups",
                     participants: "Estudantes protagonistas",
                     location: "Salas de Aula / Pátio",
-                    image: "assets/images/detalhe-cronograma.jpg?text=Inovação"
+                    image: "assets/images/detalhe-cronograma-1080x1080.jpg?text=Inovação"
                 },
                 {
                     time: "14:30 – 15:30",
@@ -1096,7 +1094,7 @@
                     description: "Empreendedorismo no Brasil - O futuro nasce onde ninguém acredita.",
                     participants: "Anthony Campelo e João Porto - Confundadores e CEOs da 4Brands",
                     location: "Auditório",
-                    image: "assets/images/detalhe-cronograma.jpg?text=Palestra"
+                    image: "assets/images/detalhe-cronograma-1080x1080.jpg?text=Palestra"
                 },
                 {
                     time: "15:30 – 16:00",
@@ -1104,7 +1102,7 @@
                     description: "",
                     participants: "",
                     location: "Pátio",
-                    image: "assets/images/detalhe-cronograma.jpg?text=Intervalo"
+                    image: "assets/images/detalhe-cronograma-1080x1080.jpg?text=Intervalo"
                 },
                 {
                     time: "16:00 – 16:30",
@@ -1112,7 +1110,7 @@
                     description: "",
                     participants: "",
                     location: "Auditório",
-                    image: "assets/images/logo-detalhe-cronograma.jpg?text=Encerramento"
+                    image: "assets/images/detalhe-cronograma-1080x1080.jpg?text=Encerramento"
                 }
             ]
         };
@@ -1228,9 +1226,9 @@
             // Controlar a aba do dia 2
             const day2Tab = document.getElementById('day2-tab');
             if (now < eventDateDay2) {
-                day2Tab.classList.add('disabled');
+                day2Tab.classList.add('none');
             } else {
-                day2Tab.classList.remove('disabled');
+                day2Tab.classList.remove('none');
             }
 
             // Atualizar eventos para o carrossel
@@ -1318,8 +1316,8 @@
                 slide.className = `carousel-slide ${event.status}`;
 
                 let icon = 'far fa-clock';
-                if (event.status === 'completed') icon = 'fas fa-check-circle';
-                if (event.status === 'ongoing') icon = 'fas fa-play-circle';
+                if (event.status === 'completed') icon = 'fas fa-check-circle fa-4x';
+                if (event.status === 'ongoing') icon = 'fas fa-play-circle fa-4x';
 
                 slide.innerHTML = `
                     <div class="slide-time">
@@ -1455,8 +1453,8 @@
 
         if (isMobile) {
             schedule.forEach(item => {
-                if (item.image === "assets/images/detalhe-cronograma.jpg?text=Intervalo") {
-                    item.image = "assets/images/detalhe-cronograma.jpg?text=Intervalo";
+                if (item.image === "assets/images/detalhe-cronograma-1080x1080.jpg?text=Intervalo") {
+                    item.image = "assets/images/detalhe-cronograma-1080x1080.jpg?text=Intervalo";
                 }
             });
         }
